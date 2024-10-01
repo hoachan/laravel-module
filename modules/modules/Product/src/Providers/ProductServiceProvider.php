@@ -24,7 +24,7 @@ class ProductServiceProvider extends ServiceProvider
 
         $this->loadRoutesFrom(__DIR__. '/../../routes/routes.php');
 
-        $this->loadViewsFrom(__DIR__. '/../Views', 'product');
+        $this->loadViewsFrom(__DIR__. '/../../resource/views', 'product');
 
         Blade::anonymousComponentPath(__DIR__. '/../Views/components', 'product'); // after that just call --> product::
     }
