@@ -82,6 +82,14 @@
 
 12. Create file composer.json, after that add to autoload > psr-4 to update appropriate folder to original composer understand
 
-    
+13. Integrating Filament
+    - Install Filament Package
+    - Move the resource to the Product folder
+    - Update namespace following the product folder
+    - In Panel Service Provider -> add :
+            ->resources([
+                UserResource::class
+            ])
+
 
 
