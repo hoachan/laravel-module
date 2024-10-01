@@ -1,0 +1,28 @@
+{
+	"name": "modules/product",
+	"description": "need to copy all autoload to the origin composer file",
+	"type": "library",
+	"version": "1.0",
+	"license": "proprietary",
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"Modules\\Product\\": "modules/Product/src/",
+			"Modules\\Product\\Tests\\": "modules/Product/tests/",
+			"Modules\\Product\\Database\\Factories\\": "modules/Product/database/factories/",
+			"Modules\\Product\\Database\\Seeders\\": "modules/Product/database/seeders/",
+		}
+	},
+	"minimum-stability": "stable",
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Modules\\Product\\Providers\\ProductServiceProvider"
+			]
+		}
+	},
+	"config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true
+}
